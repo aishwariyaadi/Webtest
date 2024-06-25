@@ -1,26 +1,13 @@
 pipeline {
-agent any
-
-
-    tools {
-        Maven '3.9.6'
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                // Run Maven clean package command
+                script {
+                    sh 'mvn clean package'
+                }
+            }
+        }
     }
-
-stages {
-
-
-stage('Build') {
-
-steps {
-
-// Run Maven clean package command
-
-sh 'mvn clean package'
-
-}
-
-}
-
-}
-
 }
