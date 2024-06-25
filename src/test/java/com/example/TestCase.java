@@ -1,2 +1,4 @@
-package com.example;public class TestCase {
+package com.example;
+
+public class TestCase {
 }
