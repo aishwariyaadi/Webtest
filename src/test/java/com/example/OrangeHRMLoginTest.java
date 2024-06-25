@@ -17,7 +17,8 @@ public class OrangeHRMLoginTest {
     @BeforeClass
     public void setUp() {
         // Set the path of the ChromeDriver executable
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+       // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
         // Initialize the ChromeDriver
         driver = new ChromeDriver();
         // Maximize the browser window
